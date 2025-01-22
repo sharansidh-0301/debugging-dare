@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"poppins",sans-serif;
+}
+.debug-body{
+    width: 100%;
+    height: 100vh;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    border-radius: 30px;
+    box-shadow: 0 0 35px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+header h1{
+    color: rgb(33, 130, 240);
+    text-transform: uppercase;
+}
+.menu-bar a ,.language-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 40px;
+    font-weight: bolder;
+    color: black;
+    transition: .2s;
+}
+.menu-bar a:hover,.language-menu a:hover{
+    font-size: 20px;
+    text-decoration: underline 5px solid rgb(203, 20, 248);
+    transition: .2s;
+}
+section{
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+}
+.language-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 20px 5px 20px 5px;
+    background: black;
+}
+.language-menu a{
+    color: white;
+}
+.language-menu a:hover{
+    font-size: 19px;
+    text-decoration: underline 5px solid rgb(161, 238, 46);
+
+}
+.language-menu h1{
+    color: rgb(250, 90, 15);
+}
+.input-output{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+.input-program,.output-program{
+    width: 55%;
+    height: 500px;
+    box-shadow: 0 0 20px gray;
+    border-radius: 5px;
+    outline: none;
+    padding: 40px;
+    font-size: 20PX;
+    border: none;
+}.output-program{
+    width: 45%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: black;
+}
+.about-us,.contact-us{
+    height: 460px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 35px cyan;
+    border-radius: 5px;
+    background: black;
+}
+.about-us p{
+    line-height: 1.5em;
+    word-spacing: .2em;
+    color: white;
+}
+.about-us h2{
+    color: cyan;
+}
+.contact-us{
+    height: 100px;
+    box-shadow: 0 0 35px cyan ;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.index-section{
+    position: relative;
+}
+#form {
+    width: 350px;
+    margin: 10vh auto auto;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 20px 0;
+    padding: 20px;
+    border: 2px solid black;
+    background: black;
+    color: white;
+    position: relative;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.3%;
+    color: cyan;
+    font-weight: bolder;
+}
+#form button{
+    font-size: 15px;
+    background-color:cyan;
+    padding: 10px;
+    width: 30%;
+    opacity: 0.8;
+    border-radius: 25px 0;
+    box-shadow: 1px;
+    color: rgb(0, 0, 0);
+    margin: 20px 0px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight:bolder;
+    transition: .4s;
+}
+#form button:hover{
+    box-shadow: 0 0 35px cyan ,0 0 75px cyan ;
+    transition: .4s;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.input-group input{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: none;
+    border: none;
+    border-bottom: 2px solid;
+    margin-top: 8px;
+    cursor: pointer;
+    outline: none;
+}
+.gender { 
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 10%;
+    display: grid ;
+    grid-template-columns: 10% 1fr 10% 1fr;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login a{
+    color:rgb(162, 0, 255);
+}
+#terms {
+    padding: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.close-x{
+    position: absolute;
+    top: 0;
+    right:0;
+    background: red;
+    width: 40px;
+    cursor: pointer;
+}
+.close-x h1{
+    color: rgb(255, 255, 255);
+}
+.login-pop-up{
+    display: none;                 /* pop up - property */
+    background: black;
+    position: absolute;  
+    width: 100%; 
+    height: 100vh; 
+    backdrop-filter: blur(2px);
+    background: transparent;
+}
