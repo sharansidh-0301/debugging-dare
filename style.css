@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&family=Noto+Sans+Tifinagh&display=swap'); 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:"poppins",sans-serif;
 }
+
 .debug-body{
     width: 100%;
     height: 100vh;
@@ -11,9 +13,10 @@
     padding: 10px;
 }
 header{
+
+    background-color: wheat;
     width: 100%;
-    height: 80px;
-    border-radius: 30px;
+    height: 120px;
     box-shadow: 0 0 35px black;
     display: flex;
     align-items: center;
@@ -21,7 +24,7 @@ header{
     padding: 20px 40px;
 }
 header h1{
-    color: rgb(33, 130, 240);
+    color: rgb(2, 53, 111);
     text-transform: uppercase;
 }
 .menu-bar a ,.language-menu a{
@@ -29,19 +32,19 @@ header h1{
     text-transform: uppercase;
     margin-right: 40px;
     font-weight: bolder;
-    color: black;
+    color:brown;
     transition: .2s;
 }
 .menu-bar a:hover,.language-menu a:hover{
     font-size: 20px;
-    text-decoration: underline 5px solid rgb(203, 20, 248);
     transition: .2s;
 }
+#top-header {
+    background-color: wheat;
+}
 section{
-    margin-top: 20px;
     width: 100%;
     height: 600px;
-    padding: 20px;
 }
 .language-menu{
     display: flex;
@@ -89,44 +92,46 @@ section{
 }
 footer{
     width: 100%;
-    height: 100vh;
-    margin-top: 20px;
     border: 2px solid black;
-    border-radius: 20px;
     background: black;
 }
-.about-us,.contact-us{
+.about-us{
     height: 460px;
-    margin: 20px;
     padding: 20px;
-    box-shadow: 0 0 35px cyan;
-    border-radius: 5px;
-    background: black;
+    background: wheat;
 }
-.about-us p{
+.about-us p{   
     line-height: 1.5em;
     word-spacing: .2em;
-    color: white;
+    color: brown;
 }
 .about-us h2{
-    color: cyan;
+    color: rgb(2, 53, 111);
 }
 .contact-us{
+    background: rgb(27,27,27);
     height: 100px;
-    box-shadow: 0 0 35px cyan ;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
+.contact-us p{
+    font-size: 10px;
+}
 
 .index-section{
-    position: relative;
+    height: fit-content;
+}
+
+.index-section{
+    margin: 0;
 }
 #form {
     width: 350px;
-    margin: 10vh auto auto;
+    margin: 10vh auto;
+    margin-top: 0;
     background-color: white;
     opacity: 0.7;
     border-radius: 20px 0;
@@ -212,9 +217,68 @@ h1 {
 .login-pop-up{
     display: none;                 /* pop up - property */
     background: black;
+    
     position: absolute;  
-    width: 100%; 
+    width: 100%;
     height: 100vh; 
     backdrop-filter: blur(2px);
     background: transparent;
+
+}
+
+.section-container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 75vh;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-box{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 20px black;
+    border-radius: 25px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly; 
+    transition: .5s;
+}
+#quiz-img{
+    filter: drop-shadow(0 0 20px yellow);
+}
+.section-box button{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border:1px solid wheat;
+    outline: none;
+    background: wheat;
+    cursor: pointer;
+}
+.section-box button:hover{
+    box-shadow:0 0 35px wheat;
+}
+.section-box:hover{
+    width: 450px;
+    height: 350px;
+    transition: .5s;
+}
+.main-foot,.sub-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sub-div{
+    flex-direction: row;
+    justify-content: space-between;
 }
