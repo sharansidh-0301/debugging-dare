@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Quiz</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>Quiz Challenge</h1>
+        </div>
+        <div class="question-nav" id="question-nav">
+            
+        </div>
+        <div class="question" id="question">
+           <p>The following code snippet is intended to calculate the sum of all even numbers from 1 to 10. However, there is a logical error in the code. Identify the correct version of the code from the given options.</p>
+           <br>
+           <p>Code Snippet:</p>
+           <pre>
+            <code>
+                
+def sum_even_numbers():
+total = 0
+for i in range(1, 10):
+    if i % 2 == 0:
+        total += i
+return total
+
+print(sum_even_numbers())
+
+            </code>
+           </pre>
+        </div>
+        <ul class="choices" id="choices">
+            <li>
+                <pre>
+                    <code>
+def sum_even_numbers():
+    total = 0
+    for i in range(1, 11):
+        if i % 2 == 0:
+            total += i
+    return total
+
+print(sum_even_numbers())
+
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code>
+def sum_even_numbers():
+    total = 0
+    for i in range(1, 10):
+        if i % 2 != 0:
+            total += i
+    return total
+
+print(sum_even_numbers())
+
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code>
+def sum_even_numbers():
+    total = 0
+    for i in range(2, 11):
+        total += i
+    return total
+
+print(sum_even_numbers())
+
+                    </code>
+                </pre>
+            </li>
+            <li>
+                <pre>
+                    <code>
+def sum_even_numbers():
+    total = 0
+    for i in range(1, 10):
+        total += i
+    return total
+
+print(sum_even_numbers())
+
+                    </code>
+                </pre>
+            </li>
+        </ul>
+        <div class="btn-container">
+            <button class="btn" id="prev-btn">Previous Question</button>
+            <button class="btn" id="hint-btn">Hint</button>
+            <button class="btn" id="next-btn">Next Question</button>
+            <button class="btn hidden" id="view-score">View Score</button>
+        </div>
+
+    </div>
+    
+</body>
+</html>
