@@ -110,7 +110,7 @@ footer{
 }
 .contact-us{
     background: rgb(27,27,27);
-    height: 100px;
+    height: 150px;
     color: aliceblue;
     display: flex;
     flex-direction: column;
@@ -281,4 +281,14 @@ h1 {
 .sub-div{
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
+}
+.sub-div-2 h6{
+    font-weight: normal;
+}
+.sub-foot-child{
+    margin:20px;
+}
+.sub-foot-child p{
+    font-size: 11px;
 }
