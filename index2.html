@@ -1,90 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Debugging Dare</title>
   </head>
   <body>
     <nav class="navbar">
-        <h1 class="head-name">DEBUGGING DARE</h1>
+      <h1 class="head-name">
+        DEBUGGING DARE
+      </h1>
+      <div class="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <ul class="navbar-list">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Challenges</a>
-            <ul class="navbar-list">
-                <li><a href="">Quiz Based</a></li>
-                <li><a href="">Ide Based</a></li>
-            </ul>
+        <li><a href="">Home</a></li>
+        <li>
+          <a href="">Challenges <i class="fa-solid fa-angle-down"></i></a>
+          <ul class="submenu">
+            <li><a href="">Quiz Based</a></li>
+            <li><a href="">Ide Based</a></li>
+          </ul>
         </li>
-        <li><a href="#">Community</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li>
+          <a href="">Community</a>
+        </li>
+        <li>
+          <a href="">About Us</a>
+        </li>
+        <li>
+          <a href="">FAQ</a>
+        </li>
+        <li>
+          <a href="">Contact Us</a>
+        </li>
       </ul>
-
       <div class="profile-dropdown">
         <div class="profile-dropdown-btn">
           <div class="profile-img">
-            <i class="fa-solid fa-circle"></i>
+            <i class="fa-solid fa-circle-user"></i>
           </div>
-
-          <span
-            >Shri
-            <i class="fa-solid fa-angle-down"></i>
-          </span>
+          <span>Shri <i class="fa-solid fa-angle-down"></i></span>
         </div>
-
         <ul class="profile-dropdown-list">
-          <li class="profile-dropdown-list-item">
-            <a href="#">
-              <i class="fa-regular fa-user"></i>
-              Edit Profile
-            </a>
-          </li>
-
-          <li class="profile-dropdown-list-item">
-            <a href="#">
-              <i class="fa-regular fa-envelope"></i>
-              Inbox
-            </a>
-          </li>
-
-          <li class="profile-dropdown-list-item">
-            <a href="#">
-              <i class="fa-solid fa-chart-line"></i>
-              Analytics
-            </a>
-          </li>
-
-          <li class="profile-dropdown-list-item">
-            <a href="#">
-              <i class="fa-solid fa-sliders"></i>
-              Settings
-            </a>
-          </li>
-
-          <li class="profile-dropdown-list-item">
-            <a href="#">
-              <i class="fa-regular fa-circle-question"></i>
-              Help & Support
-            </a>
-          </li>
+          <li class="profile-dropdown-list-item"><a href="#"><i class="fa-regular fa-user"></i>Edit Profile</a></li>
+          <li class="profile-dropdown-list-item"><a href="#"><i class="fa-regular fa-envelope"></i>Inbox</a></li>
+          <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+          <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-sliders"></i>Settings</a></li>
+          <li class="profile-dropdown-list-item"><a href="#"><i class="fa-regular fa-circle-question"></i>Help & Support</a></li>
           <hr />
-
-          <li class="profile-dropdown-list-item">
-            <a href="#">
-              <i class="fa-solid fa-arrow-right-from-bracket"></i>
-              Log out
-            </a>
-          </li>
+          <li class="profile-dropdown-list-item"><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</a></li>
         </ul>
       </div>
     </nav>
+    <script src="script2.js"></script>
   </body>
-</html>
+  </html>
