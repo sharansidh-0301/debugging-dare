@@ -94,16 +94,18 @@
 }
 .about-us {
     height: fit-content;
-    padding: 20px;
+    padding: 18px;
     background-color: #2b2d42;
 }
 .about-us p{   
+    font-size: 19px;
     line-height: 1.5em;
     word-spacing: .2em;
     color: rgb(255, 255, 255);
 }
 .about-us h2{
     color:#fcd52a;
+    font-size: 30px;
 }
 .contact-us{
     background: rgb(27,27,27);
@@ -173,6 +175,8 @@
     background:#2b2d42;
     color: white;
     position: relative;
+    border: none;
+    outline: none;
 }
 form h1 {
     text-align: center;
@@ -225,8 +229,8 @@ form h1 {
     padding: 5px;
     background-color: none;
     border: none;
-    border-bottom: 2px solid;
     margin-top: 0;
+    margin-bottom: 10px;
     cursor: pointer;
     outline: none;
 }
@@ -391,7 +395,7 @@ form h1 {
    transition: 0.5s;
    background-size: 200% auto;
    color: white;            
-   box-shadow: 0 0 20px #eee;
+   box-shadow: 0 0 35px cyan;
    border-radius: 10px;
    display: block;
  }
@@ -403,6 +407,7 @@ form h1 {
  }
  .easy-body{
     position: relative;
+    background: white;
  }
 .easy-section{
     width: 100%;
